@@ -1,20 +1,20 @@
-import Application from './core/Application';
-import * as PIXI from 'pixi.js';
+import GameApplication from "./core/Application";
+import * as PIXI from "pixi.js";
 
-if (process.env.NODE_ENV === 'development') {
+if (process.env.NODE_ENV === "development") {
   // required for pixi dev tools to work
   window.PIXI = PIXI;
 }
 
-document.addEventListener('DOMContentLoaded', new Application());
+document.addEventListener("DOMContentLoaded", new GameApplication());
 
-let app;
+// let app;
 
-window.onload= function () {
-  app = new PIXI.Application({
-    width:800,
-    height:600,
-    backgroundColor: 0xAAAAAA,
-  });
-  document.body.appendChild(app.view);
-}
+// window.onload = function () {
+//   app = new PIXI.GameApplication({
+//     width: 800,
+//     height: 600,
+//     backgroundColor: 0xaaaaaa,
+//   });
+//   document.body.appendChild(app.view);
+// };
