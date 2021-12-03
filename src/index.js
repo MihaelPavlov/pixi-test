@@ -8,13 +8,8 @@ if (process.env.NODE_ENV === "development") {
 
 document.addEventListener("DOMContentLoaded", new GameApplication());
 
-// let app;
+const app = new PIXI.Application();
 
-// window.onload = function () {
-//   app = new PIXI.GameApplication({
-//     width: 800,
-//     height: 600,
-//     backgroundColor: 0xaaaaaa,
-//   });
-//   document.body.appendChild(app.view);
-// };
+// The application will create a canvas element for you that you
+// can then insert into the DOM
+document.body.appendChild(app.view);
